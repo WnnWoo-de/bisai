@@ -1,0 +1,24 @@
+2025-11-02T15:09:41.449Z - ERROR: Unknown database 'greenn_db'
+2025-11-02T15:12:15.512Z - Executing (default): SELECT 1+1 AS result
+2025-11-02T15:12:15.519Z - Executing (default): SELECT 1+1 AS result
+2025-11-02T15:28:42.258Z - Executing (default): SELECT 1+1 AS result
+2025-11-02T15:28:42.260Z - Executing (default): SELECT 1+1 AS result
+2025-11-02T15:46:08.391Z - Executing (default): SELECT 1+1 AS result
+2025-11-02T15:46:08.393Z - Executing (default): SELECT 1+1 AS result
+2025-11-02T15:46:08.403Z - Executing (default): SELECT `id`, `username`, `email`, `password`, `avatar`, `points`, `level`, `totalCarbonSaved`, `streak`, `preferences`, `achievements`, `isActive`, `lastLogin`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'wnnwwnnw@outlook.com';
+2025-11-02T15:47:16.669Z - Executing (default): SELECT 1+1 AS result
+2025-11-02T15:47:16.671Z - Executing (default): SELECT 1+1 AS result
+2025-11-02T15:47:16.681Z - Executing (default): SELECT `id`, `username`, `email`, `password`, `avatar`, `points`, `level`, `totalCarbonSaved`, `streak`, `preferences`, `achievements`, `isActive`, `lastLogin`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'wnnwwnnw@outlook.com';
+2025-11-02T15:47:38.338Z - Executing (default): SELECT 1+1 AS result
+2025-11-02T15:47:38.340Z - Executing (default): SELECT 1+1 AS result
+2025-11-02T15:47:38.347Z - Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'greenn_db'
+2025-11-02T15:47:38.384Z - Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER auto_increment , `username` VARCHAR(30) NOT NULL UNIQUE, `email` VARCHAR(255) NOT NULL UNIQUE, `password` VARCHAR(255) NOT NULL, `avatar` VARCHAR(500), `points` INTEGER DEFAULT 0, `level` INTEGER DEFAULT 1, `totalCarbonSaved` DECIMAL(10,2) DEFAULT 0, `streak` JSON, `preferences` JSON, `achievements` JSON, `isActive` TINYINT(1) DEFAULT true, `lastLogin` DATETIME, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2025-11-02T15:47:38.425Z - Executing (default): SHOW INDEX FROM `users`
+2025-11-02T15:47:38.435Z - Executing (default): ALTER TABLE `users` ADD INDEX `users_email` (`email`)
+2025-11-02T15:47:38.457Z - Executing (default): ALTER TABLE `users` ADD INDEX `users_username` (`username`)
+2025-11-02T15:47:38.470Z - Executing (default): ALTER TABLE `users` ADD INDEX `users_points` (`points`)
+2025-11-02T15:47:38.483Z - Executing (default): ALTER TABLE `users` ADD INDEX `users_total_carbon_saved` (`totalCarbonSaved`)
+2025-11-02T15:47:38.501Z - Executing (default): SELECT `id`, `username`, `email`, `password`, `avatar`, `points`, `level`, `totalCarbonSaved`, `streak`, `preferences`, `achievements`, `isActive`, `lastLogin`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'wnnwwnnw@outlook.com';
+2025-11-02T15:47:38.746Z - Executing (default): INSERT INTO `users` (`id`,`username`,`email`,`password`,`points`,`level`,`totalCarbonSaved`,`streak`,`preferences`,`achievements`,`isActive`,`lastLogin`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?,?,?,?);
+2025-11-02T15:59:15.874Z - Executing (default): SELECT 1+1 AS result
+2025-11-02T15:59:15.876Z - Executing (default): SELECT 1+1 AS result
